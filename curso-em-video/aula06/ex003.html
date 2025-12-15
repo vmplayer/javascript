@@ -23,10 +23,12 @@
     <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição!!</p>
     <script>
-        // JavaScript
-        window.alert('Minha primeira mensagem!'); // Mensagem aleatória?!
-        window.confirm('Está gostando de JavaScript (JS)?'); // Janela com botão OK e Cancelar
-        window.prompt('Qual é o seu nome?'); // A janela vai perguntar o nome do usuário
+        var n1 = Number(window.prompt('Digite um número:')); // recebe uma string
+        var n2 = Number(window.prompt('Digite outro número:')); // recebe uma string
+        var soma = n1 + n2;
+        window.alert(`A soma entre ${n1} e ${n2} resulta em ${soma}.`);
+        // + para adição;
+        // + para concatenação;
     </script>
 </body>
 </html>
