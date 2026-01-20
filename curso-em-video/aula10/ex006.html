@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            user-select: none;
+        }
+
+        div#area {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'rgb(42, 139, 42)'
+        }
+    </script>
+</body>
+</html>
+
+<!--
+    ANOTAÇÕES:
+
+    EVENTOS DE MOUSE JAVASCRIPT:
+    (JavaScript DOM Events List)
+        mouseenter - quando o mouse passar pelo objeto;
+        mouseout- quando o mouse sair da área do objeto;
+        mousemove - quando o mouse se mover dentro do objeto;
+        mousedown - quando o botão for mantido pressionado;
+        mouseup - quando o botão for liberado (solto);
+        click - quando o botão for pressionados;
+
+    addEventListener:
+        Lê o código .js, sendo usado para chamar uma função dentro do JavaScript.
+-->

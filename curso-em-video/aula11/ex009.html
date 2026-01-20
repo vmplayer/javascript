@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de nacionalidade</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Suas informações: </legend>
+            <p>
+                <label for="pais">País de nascimento: </label>
+                <input type="text" name="pais" id="pais">
+            </p>
+            <p>
+                <input type="button" value="Enviar!" onclick="enviar()">
+            </p>
+            <div id="textarea"></div>
+        </fieldset>
+    </form>
+
+    <script>
+        var pais = document.querySelector('input#pais')
+        var txt = document.querySelector('div#textarea')
+
+        function enviar() {
+            txt.innerHTML = `Você nasceu em ${pais.value.toUpperCase()}`
+            if (pais.value == 'Brasil') {
+                txt.innerHTML = 'Você é <strong>Brasileiro</strong>. Pegue o seu cartão do SUS no posto de saúde mais próximo de você!'
+            } else {
+                txt.innerHTML = 'Você é <strong>Estrangeiro</strong>. Sem cartão do SUS para você.'
+            }
+        }
+    </script>
+</body>
+</html>
