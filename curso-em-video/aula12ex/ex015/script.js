@@ -1,0 +1,1 @@
+var data = window.document.querySelector('result')
