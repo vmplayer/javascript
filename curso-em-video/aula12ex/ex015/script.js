@@ -4,7 +4,7 @@ function verificar() {
     var aano = document.getElementById('nasc')
     var res = document.querySelector('div#result')
 
-    if (Number(aano.value) > ano || Number(aano.value) < 1910) {
+    if (Number(aano.value) > ano || Number(aano.value) < 1909) {
         res.innerHTML = `<strong>ERRO!</strong> Verifique o ano e tente novamente.`
     } else {
         var sexof = document.getElementsByName('sexo')
