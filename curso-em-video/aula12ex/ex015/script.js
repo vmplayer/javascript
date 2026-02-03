@@ -3,9 +3,10 @@ function verificar() {
     var ano = data.getFullYear()
     var aano = document.getElementById('nasc')
     var res = document.querySelector('div#result')
+    var erro = document.querySelector('input#nasc')
 
     if (Number(aano.value) > ano || Number(aano.value) < 1909) {
-        res.innerHTML = `<strong>ERRO!</strong> Verifique o ano e tente novamente.`
+        erro.setAttribute('placeholder', 'Data inválida!')
     } else {
         var sexof = document.getElementsByName('sexo')
         var idade = ano - Number(aano.value)
