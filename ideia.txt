@@ -1,0 +1,19 @@
+JOGO 4:
+Tipos de jogos:
+    - Quebra cabeças;
+    - Memória;
+    - Arrastar e soltar
+
+tipo super mario, mapa > fase > mapa.
+MEMÓRIA:
+as cartas deverão gerar um número aleatório entre 0 e 6, essas cartas deverão ser embaralhadas e duplicadas.
+
+a carta que receber um número, deverá receber uma imagem, na qual será duplicada e aplicada ao número correspondente, ou seja:
+    um código gera os valores
+    um código gera as imagens
+        aplica as imagens aos valores respectivos, ex:
+        const n1 = img1
+        const n2 = img2
+    os valores são adicionados na página
+    o html cria o estilo com as cartas usando css com as imagens definidas
+    o
