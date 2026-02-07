@@ -5,7 +5,7 @@
 ### Curso em Vídeo
 Os itens encontrados nesta pasta servem como práticas elaboradas durante o <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&si=TP-oKOSTwTlhjke2">curso de JavaScript</a> do <a href="https://www.youtube.com/@cursoemvideo">Curso em Vídeo</a>.
 
-No atual momento, é a pasta principal do repositório.
+Esta ainda é a pasta principal, como o curso foi finalizado, esta pasta não será mais atualizada.
 
 ### Aprendizado
 Os componentes presentes nesta pasta são baseados no aprendizado baseado na <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">documentação oficial</a> da <a href="https://developer.mozilla.org/pt-BR/">MDN</a> (Mozilla Developer Network).
