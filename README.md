@@ -14,7 +14,7 @@ Todos e quaisquer itens encontrados ali servem para puro aprendizado, não deve 
 
 ### Testes
 Esta pasta contém testes feitos por mim para alguns resultados.
-<br><br>
+<hr>
 Veja também o meu curso de HTML5 e CSS3 para entender melhor a minha experiência:
 <br>
 <a href="https://github.com/vmplayer/html-css">Repositório de HTML5 e CSS3</a>
