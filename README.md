@@ -8,7 +8,7 @@ Os itens encontrados nesta pasta servem como práticas elaboradas durante o <a h
 Esta ainda é a pasta principal, como o curso foi finalizado, esta pasta não será mais atualizada.
 
 ### Aprendizado
-Os componentes presentes nesta pasta são baseados no aprendizado baseado na <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">documentação oficial</a> da <a href="https://developer.mozilla.org/pt-BR/">MDN</a> (Mozilla Developer Network).
+Os componentes presentes nesta pasta são baseados no aprendizado baseado na <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">documentação oficial</a> da <a href="https://developer.mozilla.org/pt-BR/">MDN</a> (Mozilla Developer Network) ou outros meios de aprendizado (YouTube, W3C, entre outros).
 <br><br>
 Todos e quaisquer itens encontrados ali servem para puro aprendizado, não deve ser considerado para outras hipóteses (termo sujeito a alterações).
 
