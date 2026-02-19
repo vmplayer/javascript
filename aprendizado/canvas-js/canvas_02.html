@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas - Aula 02</title>
+
+    <script>
+        function desenha() {
+            let px = 50
+            let py = 50
+
+            const canvas = document.querySelector('#desenho1')
+            const ctx = canvas.getContext('2d')
+
+            ctx.fillStyle = '#00f' // Preenchimento definido
+            ctx.rect(px, py, 200, 200) // x, y, largura, altura | Desenho
+            ctx.fill()
+        }
+    </script>
+</head>
+<body onload="desenha()">
+
+    <canvas id="desenho1" width="500" height="500" style="border: 2px solid black;">
+        <h1>ERRO CRÍTICO</h1>
+        <p>O seu navegador não suporta isso.</p>
+    </canvas>
+</body>
+</html>
+
+<!--
+    fillRect() - desenha um retângulo preenchido
+    rect() - desenha um retângulo sem preenchimento
+    fill() - pega o último fillStyle e preenche exclusivamente com ele
+    clearRect() - apaga a área do desenho, útil para desenhar
+-->
