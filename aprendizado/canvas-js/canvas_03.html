@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas - Aula 03</title>
+
+    <script>
+        function desenha() {
+            let px = 50
+            let py = 50
+            const canvas = document.querySelector('#desenho1')
+            const ctx = canvas.getContext('2d')
+
+            ctx.moveTo(0, 0)
+            ctx.lineTo(250, 250)
+            ctx.lineTo(400, 250)
+            ctx.lineTo(410, 100)
+            ctx.moveTo(250, 250)
+            ctx.lineTo(200, 300)
+            ctx.stroke()
+
+            // ctx.fillStyle()
+            // ctx.fill()
+            // ctx.clearRect(50, 50, 100, 100)
+        }
+    </script>
+</head>
+<body onload="desenha()">
+
+    <canvas id="desenho1" width="500" height="500" style="border: 2px solid black;">
+        <h1>ERRO CRÍTICO</h1>
+        <p>O seu navegador não suporta isso.</p>
+    </canvas>
+</body>
+</html>
+
+<!--
+    fillRect() - desenha um retângulo preenchido
+    rect() - desenha um retângulo sem preenchimento
+    fill() - pega o último fillStyle e preenche exclusivamente com ele
+    clearRect() - apaga a área do desenho, útil para desenhar
+    moveTo() - define um ponto inicial
+    lineTo() - define um ponto de movimento
+    stroke() - desenha conforme os lineTo() acima dele
+--> 
