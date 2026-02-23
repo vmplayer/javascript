@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas - Aula 08</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #desenho1 {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="desenho1" width="900" height="700">
+        <h1>ERRO CRÍTICO</h1>
+        <p>O seu navegador não suporta isso.</p>
+    </canvas>
+
+    <script>
+        const canvas = document.querySelector('#desenho1')
+        const ctx = canvas.getContext('2d')
+
+        let tamMin = 10
+        let tamMax = 100
+        let maxCircles = 50
+        let minCircles = 20
+        let angIni = 0
+        let angFim = 0
+        let posX = 0
+        let posY = 0
+        
+
+        function desenha() {
+            ctx.clearRect(0, 0, 900, 700)
+            // posX, posY, raio, angIni, angFim, sentido
+            // Sentido: true = horário | false: anti-horário
+            // (PI/180)*ang_grau
+            for (let i = 0; i < Math.random() * maxCircles + minCircles; i++) {
+                ctx.beginPath()
+                ctx.fillStyle = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255 + ')'
+
+                ctx.arc(Math.random()*900, Math.random()*800, Math.random()*tamMax + tamMin, (Math.PI/180)*0, (Math.PI/180)*360, false)
+
+                ctx.fill()
+            }
+
+            ctx.beginPath()
+            ctx.fillStyle = '#000'
+            ctx.arc(450, 350, 200, (Math.PI/180) * angIni, (Math.PI/180) * angFim, false)
+            ctx.fill()
+
+            angFim++
+            if (angFim > 360) {
+                angFim = 0
+            }
+
+            anima = requestAnimationFrame(desenha)
+        }
+
+        desenha()
+    </script>
+</body>
+</html>
+
+<!--
+    LISTA DE ELEMENTOS:
+    
+    fillRect() - desenha um retângulo preenchido
+    rect() - desenha um retângulo sem preenchimento
+    fill() - pega o último fillStyle e preenche exclusivamente com ele
+    clearRect() - apaga a área do desenho, útil para desenhar
+    moveTo() - define um ponto inicial
+    lineTo() - define um ponto de movimento
+    stroke() - desenha conforme os lineTo() acima dele
+-->
